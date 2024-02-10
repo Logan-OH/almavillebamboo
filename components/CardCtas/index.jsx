@@ -45,7 +45,7 @@ export default function CardCtas({ cards }) {
               Whether you are in Nashville, Middle Tennessee or in the
               surrounding states, you may be intersted to know that we are
               unusual because we are a 4 season nursery. Commercial contractors
-              don't have select planting seasons, so we don't either. Home
+              don&apos;t have select planting seasons, so we don&apos;t either. Home
               owners or DIY folks are welcome, and we provide consulting
               services to help with planning and design. If you are new to
               bamboo, you may have questions after viewing our videos. We are
@@ -88,7 +88,7 @@ export default function CardCtas({ cards }) {
             <Text type="p2" align="center">
               Almaville Bamboo is easy to find, the park is open 24/7 for you to
               walk around on your own and hike all 32 acres. Guided tours can be
-              provided with a scheduled appointment, while the property doesn't
+              provided with a scheduled appointment, while the property doesn&apos;t
               offer food or drinks the well-known Almaville Market has both for
               you and your family to enjoy after a hike.
             </Text>

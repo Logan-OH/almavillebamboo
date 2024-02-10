@@ -1,0 +1,60 @@
+@import "../styleguide.scss";
+
+.error__404 {
+  height: 419px;
+  background-color: $grey-lighter;
+}
+
+.error__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: space-for-units(10);
+}
+
+@media (min-width: 768px) {
+  .error__404 {
+    height: 530px;
+  }
+
+  .error__content {
+    top: space-for-units(15);
+  }
+}
+
+.error__h1 {
+  font-size: 30px !important;
+  line-height: 58px !important;
+  text-transform: none !important;
+}
+
+@media (min-width: 768px) {
+  .error__h1 {
+    font-size: 38px !important;
+    line-height: 58px !important;
+  }
+}
+
+.error__p {
+  margin: 0;
+  margin-bottom: space-for-units(5);
+  font-family: $font-arimo;
+  font-size: 20px;
+  text-align: center;
+  color: $grey;
+}
+
+@media (min-width: 768px) {
+  .error__p {
+    margin: 0 auto;
+    margin-bottom: space-for-units(5);
+    max-width: 618px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.error__link {
+  margin: 0 auto !important;
+}

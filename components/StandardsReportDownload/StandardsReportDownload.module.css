@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Vertigo";
+  src: url(/fonts/vertigo/vertigo.otf);
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Vertigo";
+  src: url(/fonts/vertigo/vertigo-bold.otf);
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "Vertigo";
+  src: url(/fonts/vertigo/vertigo-demiBold.otf);
+  font-weight: 500;
+  font-style: normal; }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+.d-none {
+  display: none !important; }
+
+.stan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #193b69;
+  border-radius: 30px;
+  padding-top: 24px;
+  padding-right: 16px;
+  padding-bottom: 40px;
+  padding-left: 16px;
+  background-color: #f3f4f6; }
+
+@media (min-width: 992px) {
+  .stan {
+    flex-direction: row;
+    max-width: 627px;
+    padding: 24px 40px;
+    gap: 32px; } }
+.stan__img {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  width: 147px;
+  height: 191px; }
+
+@media (min-width: 992px) {
+  .stan__img {
+    margin: 0; } }
+.stan__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+@media (min-width: 992px) {
+  .stan__text {
+    max-width: 363px;
+    justify-content: flex-start; } }
+.stan__download {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+  gap: space-for-units(2);*/
+  display: block;
+  padding-left: 45px;
+  background-image: url("/Images/components/StandardsReport/download.svg");
+  background-position: left center;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  max-width: 200px;
+  margin: 0 auto; }
+  @media (min-width: 992px) {
+    .stan__download {
+      max-width: none;
+      margin: 0; } }
+
+.img__adjust {
+  margin-left: 35px; }
+
+@media (min-width: 992px) {
+  .img__adjust {
+    margin-left: 0; } }
+.download__adjust {
+  align-self: center;
+  padding-top: 10px; }

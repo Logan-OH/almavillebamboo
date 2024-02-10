@@ -1,0 +1,91 @@
+$white: #ffffff;
+
+$grey-light-light: #edf0f2;
+$grey-lighter: #f3f4f6;
+$grey-light: #646a7d;
+$grey: #282a2c;
+$grey-dark: #181818;
+
+$blue-lightest: #8bbbff;
+$blue-lighter2: #0872db;
+$blue-lighter: #3472c6;
+$blue-light: #3466ab;
+$blue: #193b69;
+$blue-dark: #163966;
+
+$orange: #ea482f;
+
+$amber: #702e08;
+
+$red: #d8164a;
+
+// fonts
+@font-face {
+  font-family: "Vertigo";
+  src: url(/fonts/vertigo/vertigo.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Vertigo";
+  src: url(/fonts/vertigo/vertigo-bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Vertigo";
+  src: url(/fonts/vertigo/vertigo-demiBold.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+$font-source: source-sans-pro, sans-serif;
+$font-arimo: arimo, sans-serif;
+$font-vertigo: "Vertigo";
+$font-arial: "Arial";
+
+// spacing for margin, padding, etc
+@function space-for-units($num-units) {
+  $unit-size: 8px;
+  @if $num-units == 0 {
+    @return 0;
+  }
+  @return $unit-size * $num-units;
+}
+
+// global site container
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: space-for-units(2);
+  padding-right: space-for-units(2);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+
+//Override for french nav item
+.nav__letterspacing {
+  letter-spacing: 0.25em;
+}

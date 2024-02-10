@@ -1,0 +1,62 @@
+@import "../styleguide.scss";
+
+.faqs__accordions {
+  padding-top: space-for-units(2);
+  padding-bottom: space-for-units(7);
+}
+
+@media (min-width: 992px) {
+  .faqs__accordions {
+    padding-top: space-for-units(9);
+    padding-bottom: space-for-units(16);
+  }
+}
+
+.accordion__titles {
+  margin-bottom: 0 !important;
+}
+
+.accordion__boxstyle {
+  padding: space-for-units(2);
+  font-size: 18px !important;
+  font-weight: normal !important;
+  padding-top: space-for-units(2);
+  padding-bottom: space-for-units(2);
+  align-self: center;
+}
+
+.accordion_question {
+  padding-top: space-for-units(2);
+  margin-bottom: 0;
+}
+
+.line {
+  margin-top: space-for-units(8);
+  margin-bottom: space-for-units(4);
+  width: 100%;
+  background-color: $orange;
+  height: 1px;
+  border-radius: space-for-units(3);
+}
+
+.faqs__background {
+  width: 100%;
+  background-image: url(/Images/pages/Faqs/MobileBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .faqs__background {
+    width: 100%;
+    background-image: url(/Images/pages/Faqs/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.faqs__a {
+  text-decoration: none;
+  font-weight: bold;
+  color: $blue-lighter2;
+}

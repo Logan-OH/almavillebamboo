@@ -1,0 +1,78 @@
+@import "../../styles/styleguide.scss";
+
+.vial {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(50% - space-for-units(5));
+  border-radius: 30px;
+  padding: space-for-units(2);
+  background-color: $white;
+}
+
+@media (min-width: 992px) {
+  .vial {
+    padding: space-for-units(2);
+    width: calc(25% - space-for-units(6));
+  }
+}
+
+.vial__vialimg {
+  height: 156px;
+  margin: 0 auto;
+}
+
+.vial__badge {
+  position: absolute;
+  top: space-for-units(1);
+  right: space-for-units(1);
+  width: 29px;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .vial__badge {
+    top: space-for-units(2);
+    right: space-for-units(2);
+  }
+}
+
+.vial__description {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal !important;
+}
+
+.vial__id {
+  font-size: 14px;
+  line-height: 20px;
+  color: $blue !important;
+}
+
+.vial__radios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: space-for-units(1);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.vial__radio {
+  accent-color: $blue-lightest;
+}
+
+.vial__radioAmber {
+  accent-color: $amber !important;
+}
+
+.vial__label {
+  font-family: $font-arimo;
+  font-size: 10px;
+  line-height: 18px;
+}

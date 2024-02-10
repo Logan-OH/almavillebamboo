@@ -1,0 +1,54 @@
+@import "../../styles/styleguide.scss";
+
+.btn1 {
+  border: 2px solid $white;
+  border-radius: 30px;
+  margin: 0;
+  padding: space-for-units(2) space-for-units(5);
+  height: fit-content;
+  width: fit-content;
+  font-family: $font-source;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  background-color: #739c6c;
+}
+
+@media (min-width: 992px) {
+  .btn1 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.btn2 {
+  border: none;
+  border-radius: 30px;
+  margin: 0;
+  padding: space-for-units(2) space-for-units(5);
+  width: fit-content;
+  font-family: $font-arimo;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  background-color: $blue-light;
+}
+
+.btn3 {
+  border: none;
+  border-radius: 30px;
+  margin: 0;
+  padding: space-for-units(2) space-for-units(5);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $blue;
+}

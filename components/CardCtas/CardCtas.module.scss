@@ -1,0 +1,70 @@
+@import "../../styles/styleguide.scss";
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  padding-top: space-for-units(5);
+  padding-bottom: space-for-units(5);
+  background-color: $grey-lighter;
+}
+
+@media (min-width: 992px) {
+  .cards {
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: space-for-units(5);
+      padding-top: space-for-units(7);
+      padding-left: 0;
+      padding-bottom: space-for-units(7);
+      padding-right: 0;
+    }
+  }
+}
+
+.pagecards {
+  display: flex;
+  flex-direction: column;
+  padding-top: space-for-units(5);
+  padding-bottom: space-for-units(5);
+  background-color: $grey-lighter;
+}
+
+@media (min-width: 992px) {
+  .pagecards {
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: space-for-units(3);
+      align-items: center;
+    }
+  }
+}
+
+.video_container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.cards__graph {
+  display: flex;
+  justify-content: center;
+}
+
+.ReactPlayerRespo {
+  height: 200px !important;
+  width: 355px !important;
+}
+
+@media (min-width: 992px) {
+  .ReactPlayerRespo {
+    width: 990px !important;
+    height: 555px !important;
+  }
+}

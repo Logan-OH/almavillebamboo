@@ -1,0 +1,113 @@
+@import "../styleguide.scss";
+
+.product__hero {
+  background-image: url(/Images/pages/our-product/hero-product.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .product__hero {
+    background-image: url(/Images/pages/our-product/hero-product-dt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.product__vials {
+  padding-top: space-for-units(9);
+  padding-bottom: space-for-units(6.5);
+  background-color: $grey-lighter;
+}
+
+@media (min-width: 992px) {
+  .product__vials {
+    padding-top: space-for-units(11.5);
+    padding-bottom: space-for-units(7.25);
+    background-color: $grey-lighter;
+  }
+}
+
+.product__vials-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: space-for-units(2);
+}
+
+.product__report {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(50% - space-for-units(1));
+  border-radius: 30px;
+  background-color: $grey-light;
+}
+
+@media (min-width: 992px) {
+  .product__report {
+    width: calc(25% - space-for-units(6));
+  }
+}
+
+.product__report-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: space-for-units(2);
+  text-decoration: none;
+  cursor: pointer;
+
+  div {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .product__report-a {
+    padding: space-for-units(2);
+    div {
+      font-size: 16px;
+      line-height: 20px;
+
+      &:last-of-type {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+.product__imgwrapper {
+  margin-bottom: space-for-units(1.25);
+}
+
+.product__imgpdf {
+  height: 98px;
+  width: 76px;
+}
+
+@media (min-width: 992px) {
+  .product__imgpdf {
+    height: 190px;
+    width: 147px;
+  }
+}
+
+.product__downloads {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+    display: block;
+  }
+
+  span {
+    display: block;
+    margin-left: space-for-units(1);
+  }
+}

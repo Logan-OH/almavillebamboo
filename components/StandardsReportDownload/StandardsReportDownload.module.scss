@@ -1,0 +1,84 @@
+@import "../../styles/styleguide.scss";
+
+.stan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid $blue;
+  border-radius: 30px;
+  padding-top: space-for-units(3);
+  padding-right: space-for-units(2);
+  padding-bottom: space-for-units(5);
+  padding-left: space-for-units(2);
+  background-color: $grey-lighter;
+}
+
+@media (min-width: 992px) {
+  .stan {
+    flex-direction: row;
+    max-width: 627px;
+    padding: space-for-units(3) space-for-units(5);
+    gap: space-for-units(4);
+  }
+}
+
+.stan__img {
+  margin: 0 auto;
+  margin-bottom: space-for-units(3);
+  width: 147px;
+  height: 191px;
+}
+
+@media (min-width: 992px) {
+  .stan__img {
+    margin: 0;
+  }
+}
+
+.stan__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .stan__text {
+    max-width: 363px;
+    justify-content: flex-start;
+  }
+}
+
+.stan__download {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+  gap: space-for-units(2);*/
+	display: block;
+	padding-left: 45px;
+	background-image: url("/Images/components/StandardsReport/download.svg");
+	background-position: left center;
+	background-size: 35px;
+	background-repeat: no-repeat;
+	max-width: 200px;
+	margin: 0 auto;
+	
+	@media (min-width: 992px) {
+		max-width: none;
+		margin: 0;
+	}
+	
+}
+.img__adjust {
+  margin-left: 35px;
+}
+@media (min-width: 992px) {
+  .img__adjust {
+    margin-left: 0;
+  }
+}
+.download__adjust {
+  align-self: center;
+  padding-top: 10px;
+}

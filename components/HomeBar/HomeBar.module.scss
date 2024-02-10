@@ -1,0 +1,62 @@
+@import "../../styles/styleguide.scss";
+
+.home__bar {
+  background-color: #739c6c;
+  padding-top: 10px;
+}
+
+.home__barWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .home__barWrap {
+    display: flex;
+    height: 69px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.home__bar__img {
+  width: 100px;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .home__bar__img {
+    width: 162px;
+    height: auto;
+    padding-top: space-for-units(4);
+  }
+}
+
+.home__br {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .home__br {
+    display: none;
+  }
+}
+
+.home__barText {
+  font-size: 23px;
+  font-family: $font-arial;
+  line-height: 28px;
+  text-decoration: none;
+  color: $white;
+}
+
+@media (min-width: 992px) {
+  .home__barText {
+    margin-bottom: 0 !important;
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../styles/styleguide.scss";
+.thx {
+  padding-top: space-for-units(6);
+  padding-bottom: space-for-units(6);
+}
+
+@media (min-width: 768px) {
+  .thx {
+    padding-top: space-for-units(10);
+    padding-bottom: space-for-units(12);
+  }
+}
+
+.thx__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thx__p1 {
+  margin-bottom: space-for-units(3) !important;
+
+  span {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 768px) {
+  .thx__p1 {
+    span {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+}
+
+.thx__btnWrapper {
+  margin: 0 auto;
+  a {
+    display: block;
+  }
+}
